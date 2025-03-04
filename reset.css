@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chewy&family=Inter:ital,wght@0,100..900;1,100..900&family=Modak&family=Sour+Gummy:wght@100..900&display=swap');
+
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #f8e9dd;
+    font-family: "Sour Gummy", serif;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - Descubra as Palavras</title>
+    <link rel="icon" href="img/descubra_palavra.svg" type="image/x-icon" title="Logo ícones">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="container-menu">
+        <img src="img/descubra_palavra.svg" class="logo" alt="Logo do Jogo">
+        <div class="menu-links">
+            <a href="cadastro-palavra.html" class="btn btn-primary">Cadastro de Palavra</a>
+            <a href="Listar-palavra.html" class="btn btn-primary btn-success">Listar Palavras</a>
+            <a href="index.html" class="btn btn-primary btn-danger">Iniciar Jogo</a>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <main class="container">
+        <section class="container-secundario">
+            <form>
+                <div class="row align-items-center">
+                    <!-- Entrada de Dados -->
+                    <div class="col-sm-8">
+                        <label for="inLetra" class="mt-2 fw-bold">Informe uma letra:</label>
+                        <div class="d-flex">
+                            <input type="text" class="form-control me-2" id="inLetra" maxlength="1" required autofocus>
+                            <input type="submit" class="btn btn-primary" value="Jogar" id="btJogar">
+                        </div>
+                        
+                        <!-- Informações do Jogo -->
+                        <div class="info-jogo">
+                            <h2 class="info-text">Palavra: <span id="outPalavra" class="entre-letras text-primary"></span></h2>
+                            <h2 class="info-text">Nº de chances: <span id="outChances" class="text-danger">4</span></h2>
+                            <h2 class="info-text">Erros: <span id="outErros" class="entre-letras text-danger"></span></h2>
+                            <h2 id="outMensagemFinal"></h2>
+                        </div>
+                    </div>
+
+                    <!-- Imagem do Status do Jogo -->
+                    <div class="col-sm-4 text-center">
+                        <img src="img/status2.gif" alt="Situação do Jogador" class="img-fluid" id="imgStatus">
+                    </div>
+                </div>
+
+                <!-- Botão de Dica -->
+                <div class="row corFundo p-3 text-center">
+                    <div class="col-sm-12">
+                        <button type="button" class="btn btn-primary" id="btVerDica">Ver Dica</button>
+                        <span id="outDica">Custo: 1 chance</span>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="/scripts/app.js"></script>
+
+</body>
+</html>

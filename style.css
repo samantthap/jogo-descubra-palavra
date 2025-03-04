@@ -1,0 +1,199 @@
+@import url(reset.css);
+
+
+
+/* Navbar */
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu-links {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilos do logo */
+.logo {
+    width: 60vh;
+    height: auto;
+}
+
+/* Menu */
+.container-menu a.btn-primary {
+    background-color: #fc8267;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 30px 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+}
+
+.container-menu a.btn-primary:hover {
+    transform: scale(1.1);
+    background-color: #d36249;
+}
+
+/* Container principal */
+.container {
+    max-width: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Layout de colunas */
+.row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.col-sm-8 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-sm-4 {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+/* Imagem do status */
+.img-fluid {
+    width: 350px;
+    margin: 50px 70px;
+    
+}
+
+/* Estilos de texto */
+h2, .fw-bold {
+    font-size: 30px;
+    color: #818181;
+    font-family: "Chewy", serif;
+    font-weight: 400;
+
+}
+
+.entre-letras {
+    letter-spacing: 10px;
+}
+
+.text-primary {
+    color: #fc8267;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+/* Botões gerais */
+.btn {
+    background-color: #2e9215;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #317441;
+}
+
+/* Botão de dica */
+#outDica {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 25px;
+    color: #dc3545;
+    font-family: "Chewy", serif
+}
+
+/* Inputs */
+.form-control {
+    width: 300px;
+    height: 35px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border:#a09f9f;
+    border-style:solid;
+
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .col-sm-8, .col-sm-4 {
+        flex: 1;
+        text-align: center;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        gap: 10px; /* Reduzido o gap para diminuir o espaçamento entre os links */
+    }
+
+    .logo {
+        width: 50vh;
+    }
+
+    .container-menu a.btn-primary {
+        font-size: 20px; /* Reduzido o tamanho da fonte para telas menores */
+        padding: 8px 16px; /* Reduzido o padding dos botões */
+        margin: 15px 0; /* Ajustado o margin para diminuir o espaçamento vertical */
+    }
+
+    /* Garantir que o botão "Jogar" fique abaixo do input */
+    .d-flex {
+        flex-direction: column; /* Organiza o input e o botão um abaixo do outro */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    .form-control {
+        width: 80%; /* Ajusta a largura do input para se ajustar à tela */
+        margin-bottom: 10px; /* Adiciona espaçamento abaixo do input */
+    }
+
+    #btJogar {
+        width: 80%; /* Ajusta a largura do botão */
+        margin-top: 10px; /* Adiciona espaçamento acima do botão */
+    }
+    .btn {
+        margin: 15px 20px;
+        background-color: #2e9215;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn:hover {
+        background-color: #317441;
+    }
+
+
+}
+

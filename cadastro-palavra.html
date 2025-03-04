@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - Descubra as palavras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="container-menu">
+        <img src="img/descubra_palavra.svg" class="logo" alt="Logo do Jogo">
+        <div class="menu-links">
+            <a href="cadastro-palavra.html" class="btn btn-primary">Cadastro de Palavra</a>
+            <a href="Listar-palavra.html" class="btn btn-primary btn-success">Listar Palavras</a>
+            <a href="index.html" class="btn btn-primary btn-danger">Iniciar Jogo</a>
+        </div>
+    </nav>
+    <div class="container">
+    
+        <div class="container-secundario">
+            <h2 class="mt-3">Cadastrar Palavra</h2>
+            <form>
+                <p>
+                    <label for="inPalavra">Palavra:</label>
+                    <input type="text" class="form-control" id="inPalavra" required autofocus placeholder="Digite uma palavra">
+                </p>
+                <p>
+                    <label for="inDica">Dica da Palavra:</label>
+                    <input type="text" class="form-control" id="inDica" required placeholder="Digite uma dica">
+                </p>
+                <input type="submit" class="btn btn-primary" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+    <script src="/scripts/cadastro.js"></script>
+</body>
+</html>
